@@ -12,10 +12,10 @@ function main() {
 	command("lix", [
 		"run", "dox",
 		"--define", "description", "Find the instances of an executable in the system path, in Haxe.",
-		"--define", "source-path", "https://bitbucket.org/cedx/which.hx/src/main/src",
+		"--define", "source-path", "https://github.com/cedx/which.hx/src/main/src",
 		"--define", "themeColor", "0xffc105",
 		"--define", "version", Json.parse(getContent("haxelib.json")).version,
-		"--define", "website", "https://bitbucket.org/cedx/which.hx",
+		"--define", "website", "https://github.com/cedx/which.hx",
 		"--input-path", "var",
 		"--output-path", "docs",
 		"--title", "Which for Haxe",
