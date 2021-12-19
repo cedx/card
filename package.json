@@ -1,0 +1,30 @@
+{
+	"bugs": "https://github.com/cedx/card/issues",
+	"description": "Business card of Cédric Belin, full stack developer.",
+	"homepage": "https://github.com/cedx/card",
+	"license": "MIT",
+	"name": "@cedx/card",
+	"repository": "bitbucket:cedx/card",
+	"type": "commonjs",
+	"version": "1.0.0",
+	"author": {
+		"email": "cedric@belin.io",
+		"name": "Cédric Belin",
+		"url": "https://belin.io"
+	},
+	"bin": {
+		"card": "./bin/card.js"
+	},
+	"engines": {
+		"node": ">=16.0.0"
+	},
+	"funding": {
+		"type": "github",
+		"url": "https://github.com/sponsors/cedx"
+	},
+	"keywords": [
+		"card",
+		"cedx",
+		"cli"
+	]
+}
