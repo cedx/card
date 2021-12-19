@@ -1,5 +1,4 @@
 /lib/
-/node_modules/
 /res/
 /var/
 
@@ -7,3 +6,4 @@
 /*.iml
 /**/.DS_Store
 /npm-debug.log
+/run.n

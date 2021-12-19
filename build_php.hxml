@@ -1,0 +1,4 @@
+--define php-front=bin/card.php
+--define real-position
+--php .
+share/build.hxml
