@@ -13,7 +13,7 @@
 		"url": "https://belin.io"
 	},
 	"bin": {
-		"card": "./bin/card.js"
+		"cedx": "./bin/cedx.js"
 	},
 	"engines": {
 		"node": ">=16.0.0"
@@ -26,5 +26,8 @@
 		"card",
 		"cedx",
 		"cli"
-	]
+	],
+	"devDependencies": {
+		"terser": "^5.10.0"
+	}
 }

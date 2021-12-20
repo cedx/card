@@ -9,7 +9,7 @@
 		{"email": "cedric@belin.io", "homepage": "https://belin.io", "name": "Cédric Belin"}
 	],
 	"bin": [
-		"bin/card"
+		"bin/cedx"
 	],
 	"config": {
 		"optimize-autoloader": true,
