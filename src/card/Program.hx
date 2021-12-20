@@ -1,12 +1,10 @@
 package card;
 
-#if php
-import php.Const;
-import php.Global;
-#end
+import tink.Cli;
+import tink.cli.Rest;
 
 using StringTools;
-using card.StringBuilder;
+using tink.CoreApi;
 
 /** Print the business card of Cédric Belin, full stack developer. **/
 class Program {
@@ -24,10 +22,8 @@ class Program {
 	public function new() {}
 
 	/** Application entry point. **/
-	public static function main() {
-		#if php Global.error_reporting(Global.error_reporting() & ~Const.E_DEPRECATED); #end
+	public static function main()
 		Cli.process(Sys.args(), new Program()).handle(Cli.exit);
-	}
 
 	// Runs this command.
 	@:defaultCommand
@@ -37,7 +33,7 @@ class Program {
 			return Noise;
 		}
 
-		final buffer = new StringBuf()
+		final buffer = new CardBuilder()
 			.header()
 				.line()
 					.center("<light_white>Cédric Belin</> <green>/</> <white>cedx</>")
