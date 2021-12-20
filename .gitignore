@@ -1,11 +1,9 @@
-/lib/
 /node_modules/
 /res/
 /var/
-/vendor/
 
 /*.code-workspace
 /*.iml
 /**/.DS_Store
 /npm-debug.log
-/run.n
+/bin/*.js
