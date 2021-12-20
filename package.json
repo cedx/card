@@ -1,6 +1,7 @@
 {
 	"bugs": "https://github.com/cedx/card/issues",
 	"description": "Business card of Cédric Belin, full stack developer.",
+	"files": [],
 	"homepage": "https://github.com/cedx/card",
 	"license": "MIT",
 	"name": "@cedx/card",
