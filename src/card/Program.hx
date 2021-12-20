@@ -43,7 +43,7 @@ class Program {
 					.label("LinkedIn", "<gray>https://linkedin.com/in/</><cyan>cedxbelin</>")
 					.label("Twitter", "<gray>https://twitter.com/</><cyan>cedxbelin</>")
 				.line()
-					.label("Card", getCardLabel().sure())
+					.label("Card", "<yellow>npx</> <white>@cedx/card</>")
 					.label("E-mail", "<white>cedric@belin.io</>")
 					.label("Web", "<white>https://belin.io</>")
 				.line()
@@ -53,13 +53,5 @@ class Program {
 		Console.logPrefix = "";
 		Console.log('$newLine$buffer');
 		return Noise;
-	}
-
-	/** Gets the command corresponding to the card invokation. **/
-	function getCardLabel() return switch Version.haxeTarget {
-		case JavaScript: Success("<yellow>npx</> <white>@cedx/card</>");
-		case Neko: Success("<yellow>haxelib</> <white>run cedx</>");
-		case PHP: Success("<yellow>composer</> <white>exec cedx</>");
-		default: Failure(new Error(MethodNotAllowed, "Unsupported compilation target."));
 	}
 }

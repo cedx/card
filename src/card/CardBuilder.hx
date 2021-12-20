@@ -3,6 +3,7 @@ package card;
 using StringTools;
 
 /** Builds a business card by appending string chunks. **/
+@:forward(toString)
 abstract CardBuilder(StringBuf) from StringBuf {
 
 	/** The string used to indent each line. **/
