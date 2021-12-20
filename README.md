@@ -1,5 +1,5 @@
 # Cédric Belin's Card
-![Haxe](https://flat.badgen.net/badge/haxe/%3E%3D4.2.0/green) ![Haxelib](https://flat.badgen.net/haxelib/v/cedx) ![License](https://flat.badgen.net/haxelib/license/cedx) ![Downloads](https://flat.badgen.net/haxelib/d/cedx) ![Coverage](https://flat.badgen.net/coveralls/c/bitbucket/cedx/card)
+![Runtime](https://flat.badgen.net/npm/node/@cedx/card) ![Release](https://flat.badgen.net/npm/v/@cedx/card) ![License](https://flat.badgen.net/npm/license/@cedx/card) ![Downloads](https://flat.badgen.net/npm/dt/@cedx/card)
 
 Business card of Cédric Belin, yet another senior Full Stack developer,
 addicted to [Haxe](https://haxe.org), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and [PHP](https://www.php.net).
