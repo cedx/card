@@ -24,7 +24,7 @@ And voila!
 ## Development
 - [API reference](https://cedx.github.io/card)
 - [Git repository](https://github.com/cedx/card)
-- [npm package](https://lib.haxe.org/p/cedx)
+- [npm package](https://www.npmjs.com/package/@cedx/card)
 - [Submit an issue](https://github.com/cedx/card/issues)
 
 ## License
