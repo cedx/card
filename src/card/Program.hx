@@ -63,7 +63,7 @@ class Program {
 	function getCardLabel() return switch Version.haxeTarget {
 		case JavaScript: Success("<yellow>npx</> <white>@cedx/card</>");
 		case Neko: Success("<yellow>haxelib</> <white>run cedx</>");
-		case PHP: Success("<yellow>composer</> <white>global exec card</>");
+		case PHP: Success("<yellow>composer</> <white>exec cedx</>");
 		default: Failure(new Error(MethodNotAllowed, "Unsupported compilation target."));
 	}
 }
