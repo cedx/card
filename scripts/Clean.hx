@@ -6,7 +6,7 @@ using Lambda;
 
 /** Runs the script. **/
 function main() {
-	["run.n", "bin/card.js", "bin.card.php"].filter(exists).iter(deleteFile);
+	["run.n", "bin/cedx", "bin/cedx.js"].filter(exists).iter(deleteFile);
 	["lib", "res"].filter(exists).iter(removeDirectory);
 	cleanDirectory("var");
 }
