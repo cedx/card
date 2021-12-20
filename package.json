@@ -4,7 +4,7 @@
 	"homepage": "https://github.com/cedx/card",
 	"license": "MIT",
 	"name": "@cedx/card",
-	"repository": "bitbucket:cedx/card",
+	"repository": "github:cedx/card",
 	"type": "commonjs",
 	"version": "1.0.0",
 	"author": {

@@ -8,18 +8,18 @@ import sys.io.File.*;
 function main() {
 	if (exists("docs")) removeDirectory("docs");
 
-	command("haxe --define doc-gen --no-output --xml var/api.xml build.hxml");
+	command("haxe --define doc-gen --no-output --xml var/api.xml build_neko.hxml");
 	command("lix", [
 		"run", "dox",
-		"--define", "description", "Find the instances of an executable in the system path, in Haxe.",
-		"--define", "source-path", "https://github.com/cedx/which.hx/src/main/src",
+		"--define", "description", "Business card of Cedric Belin, full stack developer.",
+		"--define", "source-path", "https://github.com/cedx/card/blob/main/src",
 		"--define", "themeColor", "0xffc105",
 		"--define", "version", Json.parse(getContent("haxelib.json")).version,
-		"--define", "website", "https://github.com/cedx/which.hx",
+		"--define", "website", "https://github.com/cedx/card",
 		"--input-path", "var",
 		"--output-path", "docs",
-		"--title", "Which for Haxe",
-		"--toplevel-package", "which"
+		"--title", "Cedric Belin's Card",
+		"--toplevel-package", "card"
 	]);
 
 	copy("www/favicon.ico", "docs/favicon.ico");
