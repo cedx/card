@@ -1,4 +1,0 @@
---define php-front=bin/cedx
---define real-position
---php .
-share/build.hxml
