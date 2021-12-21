@@ -44,8 +44,8 @@ class Program {
 					.label("Twitter", "<gray>https://twitter.com/</><cyan>cedxbelin</>")
 				.line()
 					.label("Card", "<yellow>npx</> <white>@cedx/card</>")
-					.label("E-mail", "<white>cedric@belin.io</>")
-					.label("Web", "<white>https://belin.io</>")
+					.label("Mail", "<white>cedric@belin.io</>")
+					.label("Website", "<white>https://belin.io</>")
 				.line()
 			.footer();
 
