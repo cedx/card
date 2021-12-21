@@ -8,5 +8,5 @@
 	"releasenote": "Initial release.",
 	"tags": ["card", "cedx", "cli"],
 	"url": "https://github.com/cedx/card",
-	"version": "1.0.0"
+	"version": "1.0.1"
 }
