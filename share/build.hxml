@@ -1,8 +1,0 @@
---class-path src
---dce full
---define analyzer-optimize
---define no-deprecation-warnings
---define watch.excludeRoot
---library console.hx
---library tink_cli
---main card.Program
