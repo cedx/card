@@ -33,7 +33,7 @@ class Program {
 			return Noise;
 		}
 
-		final buffer = new CardBuilder()
+		final builder = new CardBuilder()
 			.header()
 				.line()
 					.center("<light_white>Cédric Belin</> <green>/</> <white>cedx</>")
@@ -51,7 +51,7 @@ class Program {
 
 		Console.formatMode = AsciiTerminal;
 		Console.logPrefix = "";
-		Console.log('$newLine$buffer');
+		Console.log('$newLine$builder');
 		return Noise;
 	}
 }
