@@ -10,7 +10,7 @@ abstract CardBuilder(StringBuf) from StringBuf {
 	static inline final indent = "   ";
 
 	/** The inner width of a line, in characters. **/
-	static inline final width = 50;
+	static inline final width = 49;
 
 	/** Creates a new string buffer. **/
 	public function new() this = new StringBuf();
