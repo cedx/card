@@ -1,12 +1,6 @@
-import haxe.crypto.Crc32;
 import haxe.io.Path.*;
-import haxe.zip.Entry;
-import haxe.zip.Writer;
 import sys.FileSystem.*;
 import sys.io.File.*;
-
-using Lambda;
-using haxe.zip.Tools;
 
 /** Recursively deletes all files in the specified `directory`. **/
 function cleanDirectory(directory: String) for (entry in readDirectory(directory).filter(entry -> entry != ".gitkeep")) {
