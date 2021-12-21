@@ -36,7 +36,7 @@ class Program {
 		final builder = new CardBuilder()
 			.header()
 				.line()
-					.center("<light_white>Cédric Belin</> <green>/</> <white>cedx</>")
+					.center("<light_white>Cédric Belin</>")
 					.center("<white>Project manager & lead developer at</> <light_white>MC2IT</>")
 				.line()
 					.label("GitHub", "<gray>https://github.com/</><cyan>cedx</>")
@@ -44,7 +44,7 @@ class Program {
 					.label("Twitter", "<gray>https://twitter.com/</><cyan>cedxbelin</>")
 				.line()
 					.label("Card", "<yellow>npx</> <white>@cedx/card</>")
-					.label("Mail", "<white>cedric@belin.io</>")
+					.label("Email", "<white>cedric@belin.io</>")
 					.label("Website", "<white>https://belin.io</>")
 				.line()
 			.footer();
