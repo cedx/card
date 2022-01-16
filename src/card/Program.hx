@@ -39,7 +39,7 @@ class Program {
 					.center("<light_white>Cédric Belin</>")
 					.center("<white>Project manager & lead developer at</> <light_white>MC2IT</>")
 				.line()
-					.label("GitHub", "<gray>https://github.com/</><cyan>cedx</>")
+					.label("Bitbucket", "<gray>https://bitbucket.org/</><cyan>cedx</>")
 					.label("LinkedIn", "<gray>https://linkedin.com/in/</><cyan>cedxbelin</>")
 					.label("Twitter", "<gray>https://twitter.com/</><cyan>cedxbelin</>")
 				.line()
