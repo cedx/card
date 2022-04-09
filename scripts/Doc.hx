@@ -12,7 +12,7 @@ function main() {
 		"run", "dox",
 		"--define", "description", "Business card of Cédric Belin, full stack developer.",
 		"--define", "source-path", "https://github.com/cedx/card/blob/main/src",
-		"--define", "themeColor", "0xffc105",
+		"--define", "themeColor", "0x772953",
 		"--define", "version", Version.packageVersion,
 		"--define", "website", "https://github.com/cedx/card",
 		"--input-path", "var",
