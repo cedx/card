@@ -1,4 +1,4 @@
-package card;
+package belin_card;
 
 import tink.Cli;
 import tink.cli.Rest;

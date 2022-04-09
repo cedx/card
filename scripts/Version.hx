@@ -1,5 +1,5 @@
 //! --class-path src
-import card.Version;
+import belin_card.Version;
 
 /** Runs the script. **/
 function main()

@@ -1,4 +1,4 @@
-package card;
+package belin_card;
 
 using StringTools;
 

@@ -1,5 +1,5 @@
 //! --class-path src
-import card.Version;
+import belin_card.Version;
 import sys.FileSystem;
 import sys.io.File;
 
@@ -18,7 +18,7 @@ function main() {
 		"--input-path", "var",
 		"--output-path", "docs",
 		"--title", "Cédric Belin's Card",
-		"--toplevel-package", "card"
+		"--toplevel-package", "belin_card"
 	]);
 
 	File.copy("www/favicon.ico", "docs/favicon.ico");
