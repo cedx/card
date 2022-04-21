@@ -1,0 +1,21 @@
+{
+	"metadata": {
+    "header": {"background": "#772953", "color": "white"},
+    "title": "Cédric Belin's Card"
+  },
+	"opts": {
+		"destination": "docs",
+		"readme": "README.md",
+		"recurse": true,
+		"template": "node_modules/tidy-jsdoc"
+	},
+	"plugins": ["plugins/markdown"],
+	"source": {
+		"include": ["lib"]
+	},
+	"sourceType": "module",
+	"tags": {
+		"allowUnknownTags": false,
+		"dictionaries": ["jsdoc"]
+	}
+}
