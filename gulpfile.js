@@ -22,7 +22,7 @@ export async function doc() {
 }
 
 /** Fixes the coding standards issues. */
-export function fix() {
+export function format() {
 	return exec("npx", ["eslint", "--config=etc/eslint.json", "--fix", ...sources]);
 }
 
