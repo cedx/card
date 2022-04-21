@@ -6,7 +6,7 @@ import del from "del";
 const sources = ["*.js", "bin/*.js", "lib/**/*.js"];
 
 /** Builds the project. */
-export function build() {
+export default function build() {
 	return exec("npx", ["tsc"]);
 }
 
@@ -16,20 +16,19 @@ export function clean() {
 }
 
 /** Builds the documentation. */
-export function doc() {
+export async function doc() {
+	await del("docs");
 	return exec("npx", ["jsdoc", "--configure", "etc/jsdoc.json"]);
 }
 
 /** Fixes the coding standards issues. */
 export function fix() {
-	return Promise.reject(new Error("TODO eslint"));
-	// exec("npx", ["eslint", "--config=etc/eslint.json", "--fix", ...sources])
+	return exec("npx", ["eslint", "--config=etc/eslint.json", "--fix", ...sources]);
 }
 
 /** Performs the static analysis of source code. */
 export function lint() {
-	return Promise.reject(new Error("TODO eslint"));
-	// exec("npx", ["eslint", "--config=etc/eslint.json", ...sources])
+	return exec("npx", ["eslint", "--config=etc/eslint.json", ...sources]);
 }
 
 /** Publishes the package in the registry. */
@@ -40,7 +39,7 @@ export async function publish() {
 }
 
 /** Watches for file changes. */
-export default function watch() {
+export function watch() {
 	return exec("npx", ["tsc", "--watch"]);
 }
 
@@ -52,6 +51,6 @@ export default function watch() {
  */
 function exec(command, args = []) {
 	return new Promise((resolve, reject) => spawn(command, args, {shell: true, stdio: "inherit"})
-    .on("close", code => code ? reject(new Error(`${command}: ${code}`)) : resolve())
+    .on("close", code => code ? reject(new Error(`${command} => ${code}`)) : resolve())
   );
 }
