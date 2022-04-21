@@ -51,6 +51,5 @@ export function watch() {
  */
 function exec(command, args = []) {
 	return new Promise((resolve, reject) => spawn(command, args, {shell: true, stdio: "inherit"})
-    .on("close", code => code ? reject(new Error(`${command} => ${code}`)) : resolve())
-  );
+		.on("close", code => code ? reject(new Error(`${command} => ${code}`)) : resolve()));
 }
