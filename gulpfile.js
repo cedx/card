@@ -34,7 +34,7 @@ export function lint() {
 /** Publishes the package in the registry. */
 export async function publish() {
 	await exec("npm", ["publish"]);
-	const {version} = JSON.parse(await readFile(new URL("package.json", import.meta.url), "utf8"));
+	const {version} = JSON.parse(await readFile("package.json", "utf8"));
 	for (const command of [["tag"], ["push", "origin"]]) await exec("git", [...command, `v${version}`]);
 }
 
