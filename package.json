@@ -46,7 +46,7 @@
 		"cli"
 	],
 	"scripts": {
-		"prepack": "tsc",
+		"prepack": "gulp",
 		"start": "node bin/belin_card.js"
 	}
 }
