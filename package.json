@@ -1,9 +1,9 @@
 {
 	"bugs": "https://github.com/cedx/card/issues",
 	"description": "Business card of Cédric Belin, full stack developer.",
+	"exports": "./lib/index.js",
 	"homepage": "https://github.com/cedx/card",
 	"license": "MIT",
-	"main": "./lib/index.js",
 	"name": "@cedx/card",
 	"repository": "github:cedx/card",
 	"type": "module",
