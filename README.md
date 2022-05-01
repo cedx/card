@@ -16,7 +16,7 @@ node --version
 Then, to display the business card, just type the following command in your terminal:
 
 ```shell
-npx @cedx/card
+npm exec @cedx/card
 ```
 
 And voila!
