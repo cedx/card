@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 import console from "node:console";
 import {readFileSync} from "node:fs";
-import {argv} from "node:process";
 import {program} from "commander";
 import {getCard} from "../lib/index.js";
 
@@ -11,4 +10,4 @@ program.name("npx @cedx/card")
 	.description("Print the business card of Cédric Belin, full stack developer.")
 	.version(version, "-v, --version")
 	.action(() => console.log(getCard(1)))
-	.parse(argv);
+	.parse();
