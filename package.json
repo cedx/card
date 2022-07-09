@@ -1,13 +1,13 @@
 {
 	"bugs": "https://github.com/cedx/card/issues",
 	"description": "Business card of Cédric Belin, full stack developer.",
-	"exports": "./lib/index.js",
+	"exports": "./src/index.js",
 	"homepage": "https://github.com/cedx/card",
 	"license": "MIT",
 	"name": "@cedx/card",
 	"repository": "github:cedx/card",
 	"type": "module",
-	"types": "./share/index.d.ts",
+	"types": "./lib/index.d.ts",
 	"version": "3.1.0",
 	"author": {
 		"email": "cedric@belin.io",
@@ -39,7 +39,7 @@
 	},
 	"files": [
 		"lib/",
-		"share/"
+		"src/"
 	],
 	"funding": {
 		"type": "github",
