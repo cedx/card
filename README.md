@@ -2,7 +2,7 @@
 ![Runtime](https://badgen.net/npm/node/@cedx/card) ![Release](https://badgen.net/npm/v/@cedx/card) ![License](https://badgen.net/npm/license/@cedx/card) ![Downloads](https://badgen.net/npm/dt/@cedx/card)
 
 Business card of Cédric Belin, yet another senior Full Stack developer,
-addicted to [Haxe](https://haxe.org), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and [PHP](https://www.php.net).
+addicted to [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and [PHP](https://www.php.net).
 
 ## Usage
 Before you start, you need to make sure you have [Node.js](https://nodejs.org) up and running.
