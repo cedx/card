@@ -6,7 +6,7 @@
 	"name": "@cedx/card",
 	"repository": "github:cedx/card",
 	"type": "module",
-	"version": "3.1.1",
+	"version": "3.2.0",
 	"author": {
 		"email": "cedric@belin.io",
 		"name": "Cédric Belin",
