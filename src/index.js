@@ -13,6 +13,7 @@ export function getCard(margin = 0) {
 		"",
 		`${chalk.white.bold("  GitHub:")} ${chalk.gray("https://github.com/")}${chalk.cyan("cedx")}`,
 		`${chalk.white.bold("LinkedIn:")} ${chalk.gray("https://linkedin.com/in/")}${chalk.cyan("cedxbelin")}`,
+		`${chalk.white.bold("Mastodon:")} ${chalk.gray("https://mastodon.social/")}${chalk.cyan("@cedx")}`,
 		`${chalk.white.bold(" Twitter:")} ${chalk.gray("https://twitter.com/")}${chalk.cyan("cedxbelin")}`,
 		"",
 		`${chalk.white.bold("    Card:")} ${chalk.yellow("npx")} ${chalk.gray("@cedx/card")}`,
