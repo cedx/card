@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [3.2.0](https://github.com/cedx/card/compare/v3.1.1...v3.2.0)
+- Added a link to the [Mastodon](https://mastodon.social) profile.
+
 ## Version [3.1.1](https://github.com/cedx/card/compare/v3.1.0...v3.1.1)
 - Dropped the dependency on [Commander.js](https://github.com/tj/commander.js).
 - Fixed a packaging issue.
