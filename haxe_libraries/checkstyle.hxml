@@ -1,0 +1,3 @@
+# @install: lix --silent download "gh://github.com/HaxeCheckstyle/haxe-checkstyle#bf9cf5f0169070e4356602be28bb2141e47b092e" into checkstyle/2.8.4/github/bf9cf5f0169070e4356602be28bb2141e47b092e
+-cp ${HAXE_LIBCACHE}/checkstyle/2.8.4/github/bf9cf5f0169070e4356602be28bb2141e47b092e/src
+-D checkstyle=2.8.4
