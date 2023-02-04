@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [4.0.0](https://github.com/cedx/card/compare/v3.2.0...v4.0.0)
+- Ported the source code to [Haxe](https://haxe.org).
+
 ## Version [3.2.0](https://github.com/cedx/card/compare/v3.1.1...v3.2.0)
 - Added a link to the [Mastodon](https://mastodon.social) profile.
 
