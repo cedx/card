@@ -10,7 +10,7 @@ function cleanDirectory(directory: String) for (entry in FileSystem.readDirector
 	else FileSystem.deleteFile(path);
 }
 
-/** Formats the specified duration in seconds or milliseconds. **/
+/** Formats the specified duration in seconds. **/
 function formatDuration(duration: Float) {
 	final operand = Math.pow(10, 3);
 	final timestamp = Math.round(duration * operand) / operand;
