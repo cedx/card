@@ -6,8 +6,7 @@ using haxe.io.Path;
 /** Recursively deletes all files in the specified `directory`. **/
 function cleanDirectory(directory: String) for (entry in FileSystem.readDirectory(directory).filter(entry -> entry != ".gitkeep")) {
 	final path = Path.join([directory, entry]);
-	if (FileSystem.isDirectory(path)) removeDirectory(path);
-	else FileSystem.deleteFile(path);
+	FileSystem.isDirectory(path) ? removeDirectory(path) : FileSystem.deleteFile(path);
 }
 
 /** Formats the specified `duration` in seconds. **/
