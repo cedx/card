@@ -1,5 +1,4 @@
 //! --class-path src --define hxnodejs --library hxnodejs --library tink_core
-import haxe.Exception;
 import haxe.Timer;
 import js.glob_watcher.GlobWatcher;
 import js.lib.Error as JsError;
@@ -11,7 +10,7 @@ function main() GlobWatcher.watch("src/belin_card/**/*.hx", {ignoreInitial: fals
 	Sys.command("node bin/belin_card.js");
 }));
 
-/** Measures the time it takes to run the specified callback. **/
+/** Measures the time it takes to run the specified callback function. **/
 private function measureCallback(done: ?JsError -> Void, callback: Callback<Noise>) {
 	final timestamp = Timer.stamp();
 	final error = try { callback.invoke(Noise); ""; } catch (e) e.message;

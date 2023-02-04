@@ -6,7 +6,7 @@ function main() {
 	Sys.command("haxe --dce full build.hxml");
 
 	final file = "bin/belin_card.js";
-	// TODO esbuild !!! Sys.command('npx terser --comments=false --config-file=etc/terser.json --output=$file $file');
+	Sys.command('npx esbuild --allow-overwrite --log-level=warning --minify --outfile=$file --platform=node $file');
 	File.saveContent(file, '#!/usr/bin/env node\n${File.getContent(file)}');
 	Sys.command('git update-index --chmod=+x $file');
 	if (Sys.systemName() != "Windows") Sys.command('chmod +x $file');
