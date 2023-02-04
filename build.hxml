@@ -3,7 +3,6 @@
 --define js-es=6
 --define js-global=global
 --define no-deprecation-warnings
---define watch.excludeRoot
 --js bin/belin_card.js
 --library console.hx
 --library hxnodejs

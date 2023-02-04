@@ -5,7 +5,7 @@
 	"description": "Business card of Cédric Belin, full stack developer.",
 	"license": "MIT",
 	"name": "cedx",
-	"releasenote": "Renamed the root package to `belin_card`.",
+	"releasenote": "Ported the source code to Haxe.",
 	"tags": ["card", "cedx", "cli"],
 	"url": "https://github.com/cedx/card",
 	"version": "4.0.0"
