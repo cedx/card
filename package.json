@@ -6,8 +6,8 @@
 	"license": "MIT",
 	"name": "@cedx/card",
 	"repository": "github:cedx/card",
-	"type": "module",
-	"version": "3.2.0",
+	"type": "commonjs",
+	"version": "4.0.0",
 	"author": {
 		"email": "cedric@belin.io",
 		"name": "Cédric Belin",
@@ -16,12 +16,9 @@
 	"bin": {
 		"belin_card": "./bin/belin_card.js"
 	},
-	"dependencies": {
-		"boxen": "^7.0.1",
-		"chalk": "^5.2.0"
-	},
 	"devDependencies": {
-		"esbuild": "^0.17.5"
+		"esbuild": "^0.17.5",
+		"glob-watcher": "^5.0.5"
 	},
 	"engines": {
 		"node": ">=18.0.0"
