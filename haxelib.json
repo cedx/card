@@ -4,7 +4,7 @@
 	"dependencies": {"Console.hx": "", "hxnodejs": "", "tink_cli": ""},
 	"description": "Business card of Cédric Belin, full stack developer.",
 	"license": "MIT",
-	"name": "cedx",
+	"name": "belin_card",
 	"releasenote": "Ported the source code to Haxe.",
 	"tags": ["card", "cedx", "cli"],
 	"url": "https://github.com/cedx/card",
