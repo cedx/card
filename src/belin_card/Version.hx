@@ -8,7 +8,7 @@ import sys.io.Process;
 #end
 
 /** Defines the Haxe compilation target. **/
-enum abstract HaxeTarget(String) from String {
+@:noDoc enum abstract HaxeTarget(String) from String {
 
 	/** The compilation target is C++. **/
 	var CPlusPlus = "cpp";
@@ -42,7 +42,7 @@ enum abstract HaxeTarget(String) from String {
 }
 
 /** Provides information about the program version. **/
-abstract class Version {
+@:noDoc abstract class Version {
 
 	/** The hash of the current Git commit. **/
 	public static var gitCommitHash(get, null): String;
