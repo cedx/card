@@ -6,7 +6,7 @@ using tink.CoreApi;
 
 /** Runs the script. **/
 function main() GlobWatcher.watch("src/belin_card/**/*.hx", {ignoreInitial: false}, done -> measureCallback(done, () -> {
-	Sys.command("haxe build.hxml");
+	Sys.command("haxe", ["build.hxml"]);
 	Sys.command("node bin/belin_card.js");
 }));
 
