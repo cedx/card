@@ -4,7 +4,7 @@ import js.glob_watcher.GlobWatcher;
 import js.lib.Error as JsError;
 using tink.CoreApi;
 
-/** Runs the script. **/
+/** Watches for file changes. **/
 function main() GlobWatcher.watch("src/belin_card/**/*.hx", {ignoreInitial: false}, done -> measureCallback(done, () -> {
 	Sys.command("lix Build --debug");
 	Sys.command("node bin/belin_card.js");
