@@ -22,7 +22,7 @@ npx @cedx/card
 And voila!
 
 ## See also
-- [API reference](https://cedx.github.io/card)
+- [API reference](https://docs.belin.io/card)
 - [Git repository](https://github.com/cedx/card)
 - [npm package](https://www.npmjs.com/package/@cedx/card)
 - [Submit an issue](https://github.com/cedx/card/issues)
