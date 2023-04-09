@@ -1,5 +1,5 @@
 # Cédric Belin's Card
-Business card of Cédric Belin, yet another Full Stack developer, addicted to
+Business card of Cédric Belin, yet another full stack developer, addicted to
 [Haxe](https://haxe.org), [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript) and [PHP](https://www.php.net).
 
 ## Usage
