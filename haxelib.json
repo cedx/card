@@ -7,6 +7,6 @@
 	"name": "belin_card",
 	"releasenote": "Updated the package dependencies.",
 	"tags": ["card", "cedx", "cli"],
-	"url": "https://github.com/cedx/card",
+	"url": "https://docs.belin.io/card",
 	"version": "4.1.0"
 }

@@ -28,4 +28,4 @@ And voila!
 - [Submit an issue](https://github.com/cedx/card/issues)
 
 ## License
-[Cédric Belin's Card](https://github.com/cedx/card) is distributed under the MIT License.
+[Cédric Belin's Card](https://docs.belin.io/card) is distributed under the MIT License.
