@@ -1,5 +1,5 @@
 # Cédric Belin's Card
-Business card of Cédric Belin, yet another full stack developer, addicted to
+Business card of Cédric Belin, yet another Full Stack developer, addicted to
 [Haxe](https://haxe.org), [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript) and [PHP](https://www.php.net).
 
 ## Usage
@@ -18,9 +18,3 @@ npx @cedx/card
 ```
 
 And voila!
-
-## See also
-- [API reference](https://docs.belin.io/card/api)
-- [Git repository](https://github.com/cedx/card)
-- [npm package](https://www.npmjs.com/package/@cedx/card)
-- [Submit an issue](https://github.com/cedx/card/issues)
