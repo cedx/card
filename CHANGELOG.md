@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [4.1.0](https://github.com/cedx/card/compare/v4.0.0...v4.1.0)
+- Updated the package dependencies.
+
 ## Version [4.0.0](https://github.com/cedx/card/compare/v3.2.0...v4.0.0)
 - Ported the source code to [Haxe](https://haxe.org).
 
