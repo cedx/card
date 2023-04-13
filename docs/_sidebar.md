@@ -1,2 +1,2 @@
-- [API Reference](https://docs.belin.io/card/api)
+- [API reference](https://docs.belin.io/card/api)
 - [License](license.md)
