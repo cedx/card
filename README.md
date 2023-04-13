@@ -1,5 +1,5 @@
 # Cédric Belin's Card
-![Runtime](https://badgen.net/npm/node/@cedx/card) ![Release](https://badgen.net/npm/v/@cedx/card) ![License](https://badgen.net/npm/license/@cedx/card) ![Downloads](https://badgen.net/npm/dt/@cedx/card)
+![Node.js](https://badgen.net/npm/node/@cedx/card) ![npm](https://badgen.net/npm/v/@cedx/card) ![License](https://badgen.net/npm/license/@cedx/card) ![Downloads](https://badgen.net/npm/dt/@cedx/card)
 
 Business card of Cédric Belin, yet another senior full stack developer,
 addicted to [Haxe](https://haxe.org), [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript) and [PHP](https://www.php.net).
