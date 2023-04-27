@@ -8,5 +8,5 @@ function main() GlobWatcher.watch("src/belin_card/**/*.hx", {ignoreInitial: fals
 	Sys.command("lix Build --debug");
 	Sys.command("node bin/belin_card.js");
 	Sys.println('> ${Tools.formatDuration(Timer.stamp() - timestamp)}');
-	done(null);
+	done();
 });
