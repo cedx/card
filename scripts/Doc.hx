@@ -1,5 +1,5 @@
 //! --class-path src
-import belin_card.Version;
+import belin_card.Platform;
 import sys.FileSystem;
 import sys.io.File;
 using Lambda;
@@ -14,7 +14,7 @@ function main() {
 		"--define", "description", "Business card of Cedric Belin, full stack developer.",
 		"--define", "source-path", "https://github.com/cedx/card/blob/main/src",
 		"--define", "themeColor", "0x772953",
-		"--define", "version", Version.packageVersion,
+		"--define", "version", Platform.packageVersion,
 		"--define", "website", "https://docs.belin.io/card",
 		"--input-path", "var",
 		"--output-path", "docs/api",
