@@ -4,7 +4,6 @@ package belin_card;
 import haxe.macro.Compiler;
 import haxe.macro.Context;
 import sys.io.File;
-import sys.ssl.Socket;
 
 /** Provides initialization macros. **/
 @:noDoc abstract class Macro {
@@ -14,9 +13,5 @@ import sys.ssl.Socket;
 		final path = Compiler.getOutput();
 		File.saveContent(path, '#!/usr/bin/env $executable\n${File.getContent(path)}');
 	});
-
-	/** Enables or disables the verification of peer certificates during SSL handshake. **/
-	public static function verifySslCerts(value: Bool)
-		Socket.DEFAULT_VERIFY_CERT = value;
 }
 #end
