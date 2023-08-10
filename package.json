@@ -17,7 +17,7 @@
 		"belin_card": "./bin/belin_card.js"
 	},
 	"devDependencies": {
-		"esbuild": "^0.18.20",
+		"esbuild": "^0.19.0",
 		"glob-watcher": "^6.0.0"
 	},
 	"engines": {
