@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [4.2.0](https://github.com/cedx/card/compare/v4.1.0...v4.2.0)
+- Removed the link to the [Twitter](https://twitter.com) profile.
+
 ## Version [4.1.0](https://github.com/cedx/card/compare/v4.0.0...v4.1.0)
 - Updated the package dependencies.
 
