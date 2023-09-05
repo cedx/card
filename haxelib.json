@@ -5,7 +5,7 @@
 	"description": "Business card of Cédric Belin, full stack developer.",
 	"license": "MIT",
 	"name": "belin_card",
-	"releasenote": "Updated the package dependencies.",
+	"releasenote": "Removed the link to the Twitter profile.",
 	"tags": ["card", "cedx", "cli"],
 	"url": "https://docs.belin.io/card",
 	"version": "4.2.0"
