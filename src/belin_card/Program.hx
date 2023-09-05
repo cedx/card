@@ -44,7 +44,6 @@ using tink.CoreApi;
 					.label("GitHub", "<gray>https://github.com/</><cyan>cedx</>")
 					.label("LinkedIn", "<gray>https://linkedin.com/in/</><cyan>cedxbelin</>")
 					.label("Mastodon", "<gray>https://mastodon.social/</><cyan>@cedx</>")
-					.label("Twitter", "<gray>https://twitter.com/</><cyan>cedxbelin</>")
 				.line()
 					.label("Card", "<yellow>npx</> <white>@cedx/card</>")
 					.label("Email", "<white>cedric@belin.io</>")
