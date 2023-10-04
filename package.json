@@ -5,7 +5,7 @@
 	"homepage": "https://docs.belin.io/card",
 	"license": "MIT",
 	"name": "@cedx/card",
-	"repository": "github:cedx/card",
+	"repository": "cedx/card",
 	"type": "commonjs",
 	"version": "4.2.0",
 	"author": {
