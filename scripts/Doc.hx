@@ -15,7 +15,7 @@ function main() {
 		"--define", "source-path", "https://github.com/cedx/card/blob/main/src",
 		"--define", "themeColor", "0x772953",
 		"--define", "version", Platform.packageVersion,
-		"--define", "website", "https://docs.belin.io/card",
+		"--define", "website", "https://cedx.github.io/card",
 		"--input-path", "var",
 		"--output-path", "docs/api",
 		"--title", "Cedric Belin's Card",
