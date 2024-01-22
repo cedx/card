@@ -43,9 +43,9 @@
 		"cli"
 	],
 	"scripts": {
-		"build": "tsc --project src/tsconfig.json",
+		"build": "tsc --project src/tsconfig.json && esbuild --allow-overwrite --bundle --format=esm --legal-comments=none --log-level=warning --minify --outfile=bin/belin_card.js --platform=node src/cli.ts",
 		"clean": "node scripts/clean.js",
-		"dist": "npm run clean && npm run build",
+		"dist": "npm run clean && npm run build && node scripts/dist.js && git update-index --chmod=+x bin/belin_card.js",
 		"doc": "typedoc --options etc/typedoc.json && node scripts/doc.js",
 		"lint": "tsc --project tsconfig.json && eslint --config=etc/eslint.json scripts src",
 		"postpublish": "node scripts/publish.js",
