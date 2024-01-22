@@ -25,6 +25,5 @@ export function parseJson(path) {
  * @param {string} executable The name of the executable to prepend.
  */
 export function shebang(path, executable = "node") {
-	const content = readFileSync(path, {encoding: "utf8"});
-	writeFileSync(path, `#!/usr/bin/env ${executable}${EOL}${content}`);
+	writeFileSync(path, `#!/usr/bin/env ${executable}${EOL}${readFileSync(path, {encoding: "utf8"})}`);
 }
