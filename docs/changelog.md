@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [5.0.0](https://github.com/cedx/card/compare/v4.2.0...v5.0.0)
+- Ported the source code to [TypeScript](https://www.typescriptlang.org).
+
 ## Version [4.2.0](https://github.com/cedx/card/compare/v4.1.0...v4.2.0)
 - Removed the link to the [Twitter](https://twitter.com) profile.
 

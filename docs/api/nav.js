@@ -1,1 +1,0 @@
-var navContent='<ul class="nav nav-list"><li data_path="belin_card.CardBuilder"><a class="treeLink" href="::rootPath::belin_card/CardBuilder.html" title="belin_card.CardBuilder">CardBuilder<span class="pack">&nbsp;-&nbsp;belin_card</span></a></li></ul>';
