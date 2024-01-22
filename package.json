@@ -1,7 +1,6 @@
 {
 	"bugs": "https://github.com/cedx/card/issues",
 	"description": "Business card of Cédric Belin, full stack developer.",
-	"files": [],
 	"homepage": "https://cedx.github.io/card",
 	"license": "MIT",
 	"name": "@cedx/card",
@@ -18,6 +17,8 @@
 	},
 	"devDependencies": {
 		"@types/node": "^20.11.5",
+		"@typescript-eslint/eslint-plugin": "^6.19.0",
+		"@typescript-eslint/parser": "^6.19.0",
 		"boxen": "^7.1.1",
 		"chalk": "^5.3.0",
 		"esbuild": "^0.19.11",
@@ -28,13 +29,27 @@
 	"engines": {
 		"node": ">=20.0.0"
 	},
+	"exports": {
+		"types": "./lib/index.d.ts",
+		"import": "./lib/index.js"
+	},
+	"files": [
+		"lib/",
+		"src/"
+	],
 	"keywords": [
 		"card",
 		"cedx",
 		"cli"
 	],
 	"scripts": {
-		"prepack": "lix Dist",
-		"start": "node bin/belin_card.js"
+		"build": "tsc --project src/tsconfig.json",
+		"clean": "node scripts/clean.js",
+		"dist": "npm run clean && npm run build",
+		"doc": "typedoc --options etc/typedoc.json && node scripts/doc.js",
+		"lint": "tsc --project tsconfig.json && eslint --config=etc/eslint.json scripts src",
+		"postpublish": "node scripts/publish.js",
+		"prepack": "npm run dist",
+		"start": "npm run build && node bin/belin_card.js"
 	}
 }
