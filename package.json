@@ -16,7 +16,7 @@
 		"belin_card": "./bin/belin_card.js"
 	},
 	"devDependencies": {
-		"@types/node": "^20.11.17",
+		"@types/node": "^20.11.19",
 		"@typescript-eslint/eslint-plugin": "^7.0.1",
 		"@typescript-eslint/parser": "^7.0.1",
 		"boxen": "^7.1.1",
@@ -45,13 +45,14 @@
 		"cli"
 	],
 	"scripts": {
-		"build": "tsc --project src/tsconfig.json && esbuild \"--banner:js=#!/usr/bin/env node\" --bundle --format=esm --legal-comments=none --log-level=warning --minify --outfile=bin/belin_card.js --platform=node src/cli.ts",
+		"build": "tsc --project src/tsconfig.json && esbuild \"--banner:js=#!/usr/bin/env node\" --bundle --format=esm --legal-comments=none --minify --outfile=bin/belin_card.js --platform=node src/cli.ts",
 		"clean": "node tool/clean.js",
 		"dist": "npm run clean && npm run build && git update-index --chmod=+x bin/belin_card.js",
 		"doc": "typedoc --options etc/typedoc.js && node tool/doc.js",
 		"lint": "npm run build && tsc --project tsconfig.json && eslint --config=etc/eslint.cjs src tool",
 		"postpublish": "node tool/publish.js",
 		"prepack": "npm run dist",
-		"start": "npm run build && node bin/belin_card.js"
+		"start": "npm run build && node bin/belin_card.js",
+		"watch": "esbuild --bundle --format=esm --legal-comments=none --outfile=bin/belin_card.js --platform=node --watch src/cli.ts"
 	}
 }
