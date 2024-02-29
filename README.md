@@ -22,10 +22,10 @@ npx @cedx/card
 And voila!
 
 ## See also
-- [API reference](https://cedx.github.io/card/api)
+- [API reference](https://docs.belin.io/card/api)
 - [Git repository](https://github.com/cedx/card)
 - [npm package](https://www.npmjs.com/package/@cedx/card)
 - [Submit an issue](https://github.com/cedx/card/issues)
 
 ## License
-[Cédric Belin's Card](https://cedx.github.io/card) is distributed under the MIT License.
+[Cédric Belin's Card](https://docs.belin.io/card) is distributed under the MIT License.
