@@ -1,5 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+// @ts-expect-error TS2305
+import {styleText} from "node:util";
 import boxen from "boxen";
-import chalk from "chalk";
 
 /**
  * Returns the card content.
@@ -8,16 +10,16 @@ import chalk from "chalk";
  */
 export function getCard(margin = 0): string {
 	const buffer = [
-		chalk.white.bold("Cédric Belin"),
-		`${chalk.white("Project manager & lead developer at")} ${chalk.white.bold("MC2IT")}`,
+		styleText("white", styleText("bold", "Cédric Belin")),
+		`${styleText("white", "Project manager & lead developer at")} ${styleText("white", styleText("bold", "MC2IT"))}`,
 		"",
-		`${chalk.white.bold("  GitHub:")} ${chalk.gray("https://github.com/")}${chalk.cyan("cedx")}`,
-		`${chalk.white.bold("LinkedIn:")} ${chalk.gray("https://linkedin.com/in/")}${chalk.cyan("cedxbelin")}`,
-		`${chalk.white.bold("Mastodon:")} ${chalk.gray("https://mastodon.social/")}${chalk.cyan("@cedx")}`,
+		`${styleText("white bold", styleText("bold", "  GitHub:"))} ${styleText("gray", "https://github.com/")}${styleText("cyan", "cedx")}`,
+		`${styleText("white", styleText("bold", "LinkedIn:"))} ${styleText("gray", "https://linkedin.com/in/")}${styleText("cyan", "cedxbelin")}`,
+		`${styleText("white", styleText("bold", "Mastodon:"))} ${styleText("gray", "https://mastodon.social/")}${styleText("cyan", "@cedx")}`,
 		"",
-		`${chalk.white.bold("    Card:")} ${chalk.yellow("npx")} ${chalk.white("@cedx/card")}`,
-		`${chalk.white.bold("   Email:")} ${chalk.white("cedric@belin.io")}`,
-		`${chalk.white.bold(" Website:")} ${chalk.white("https://belin.io")}`
+		`${styleText("white", styleText("bold", "    Card:"))} ${styleText("yellow", "npx")} ${styleText("white", "@cedx/card")}`,
+		`${styleText("white", styleText("bold", "   Email:"))} ${styleText("white", "cedric@belin.io")}`,
+		`${styleText("white", styleText("bold", " Website:"))} ${styleText("white", "https://belin.io")}`
 	];
 
 	return boxen(buffer.join("\n"), {
