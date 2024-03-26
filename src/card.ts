@@ -13,7 +13,7 @@ export function getCard(margin = 0): string {
 		styleText("white", styleText("bold", "Cédric Belin")),
 		`${styleText("white", "Project manager & lead developer at")} ${styleText("white", styleText("bold", "MC2IT"))}`,
 		"",
-		`${styleText("white bold", styleText("bold", "  GitHub:"))} ${styleText("gray", "https://github.com/")}${styleText("cyan", "cedx")}`,
+		`${styleText("white", styleText("bold", "  GitHub:"))} ${styleText("gray", "https://github.com/")}${styleText("cyan", "cedx")}`,
 		`${styleText("white", styleText("bold", "LinkedIn:"))} ${styleText("gray", "https://linkedin.com/in/")}${styleText("cyan", "cedxbelin")}`,
 		`${styleText("white", styleText("bold", "Mastodon:"))} ${styleText("gray", "https://mastodon.social/")}${styleText("cyan", "@cedx")}`,
 		"",
