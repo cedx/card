@@ -49,7 +49,7 @@ theme:
     - navigation.sections
     - search.suggest
   font: false
-  logo: favicon.png
+  logo: logo.png
   name: material
   palette:
     accent: deep purple
