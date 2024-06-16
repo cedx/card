@@ -1,12 +1,12 @@
 {
 	"bugs": "https://github.com/cedx/card/issues",
 	"description": "Business card of Cédric Belin, full stack developer.",
-	"homepage": "https://docs.belin.io/card",
+	"homepage": "https://github.com/cedx/card",
 	"license": "MIT",
 	"name": "@cedx/card",
 	"repository": "cedx/card",
 	"type": "module",
-	"version": "5.0.0",
+	"version": "5.0.1",
 	"author": {
 		"email": "cedric@belin.io",
 		"name": "Cédric Belin",
@@ -25,7 +25,6 @@
 		"eslint": "^9.5.0",
 		"execa": "^9.2.0",
 		"gulp": "^5.0.0",
-		"typedoc": "^0.25.13",
 		"typescript": "^5.4.5"
 	},
 	"engines": {
