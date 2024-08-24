@@ -30,6 +30,6 @@
 	],
 	"scripts": {
 		"prepack": "lix Dist",
-		"start": "lix Build && node bin/belin_card.js"
+		"start": "node bin/belin_card.js"
 	}
 }
