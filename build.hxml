@@ -1,0 +1,6 @@
+--define js-es=6
+--define js-global=global
+--js bin/belin_card.js
+--library hxnodejs
+--macro belin_card.Macro.shebang("node")
+share/build.hxml
