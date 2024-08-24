@@ -1,12 +1,13 @@
 {
 	"bugs": "https://github.com/cedx/card/issues",
 	"description": "Business card of Cédric Belin, full stack developer.",
+	"files": [],
 	"homepage": "https://github.com/cedx/card",
 	"license": "MIT",
 	"name": "@cedx/card",
 	"repository": "cedx/card",
-	"type": "module",
-	"version": "5.0.1",
+	"type": "commonjs",
+	"version": "6.0.0",
 	"author": {
 		"email": "cedric@belin.io",
 		"name": "Cédric Belin",
@@ -16,36 +17,19 @@
 		"belin_card": "./bin/belin_card.js"
 	},
 	"devDependencies": {
-		"@types/eslint__js": "^8.42.3",
-		"@types/gulp": "^4.0.17",
-		"@types/node": "^22.5.0",
-		"boxen": "^8.0.1",
-		"del": "^7.1.0",
-		"execa": "^9.3.1",
-		"gulp": "^5.0.0",
-		"typescript": "^5.5.4",
-		"typescript-eslint": "^8.2.0"
+		"esbuild": "^0.23.1",
+		"glob-watcher": "^6.0.0"
 	},
 	"engines": {
 		"node": ">=22.0.0"
 	},
-	"exports": {
-		"types": "./lib/index.d.ts",
-		"default": "./lib/index.js"
-	},
-	"files": [
-		"lib/",
-		"src/",
-		"tsconfig.json"
-	],
 	"keywords": [
 		"card",
 		"cedx",
 		"cli"
 	],
 	"scripts": {
-		"postpublish": "gulp publish",
-		"prepack": "gulp",
-		"start": "gulp build && node bin/belin_card.js"
+		"prepack": "lix Dist",
+		"start": "lix Build && node bin/belin_card.js"
 	}
 }

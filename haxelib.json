@@ -1,0 +1,12 @@
+{
+	"classPath": "src/",
+	"contributors": ["cedx"],
+	"dependencies": {"Console.hx": "", "hxnodejs": "", "tink_cli": ""},
+	"description": "Business card of Cédric Belin, full stack developer.",
+	"license": "MIT",
+	"name": "belin_card",
+	"releasenote": "Removed the link to the Twitter profile.",
+	"tags": ["card", "cedx", "cli"],
+	"url": "https://github.com/cedx/card",
+	"version": "6.0.0"
+}
