@@ -9,7 +9,7 @@ using tink.CoreApi;
 
 	> npx @cedx/card [flags]
 **/
-@:noDoc final class Program {
+final class Program {
 
 	/** The string corresponding to a line break. **/
 	public static final newLine = Sys.systemName() == "Windows" ? "\r\n" : "\n";
