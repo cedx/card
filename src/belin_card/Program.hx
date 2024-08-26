@@ -1,5 +1,8 @@
 package belin_card;
 
+#if nodejs
+import js.Node.process;
+#end
 import tink.Cli;
 using StringTools;
 using tink.CoreApi;
@@ -24,8 +27,10 @@ final class Program {
 	public function new() {}
 
 	/** Application entry point. **/
-	public static function main()
+	public static function main() {
+		#if nodejs process.title = "Cédric Belin's Card"; #end
 		Cli.process(Sys.args(), new Program()).handle(Cli.exit);
+	}
 
 	// Runs this command.
 	@:defaultCommand
