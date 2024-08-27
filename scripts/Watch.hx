@@ -15,9 +15,10 @@ function main() {
 
 /** Measures the time it takes to run the specified `command`. **/
 private function measureCommand(?done: Callback<Null<JsError>>, command: String)
-	measurePromise(done, command, Promise.irreversible((resolve, reject) ->
-		Sys.command(command) == 0 ? resolve(Noise) : reject(new Error('The command "$command" failed.'))
-	));
+	measurePromise(done, command, Promise.irreversible((resolve, reject) -> {
+		final exitCode = Sys.command(command);
+		exitCode == 0 ? resolve(Noise) : reject(new Error(exitCode, 'The command "$command" failed.'));
+	}));
 
 /** Measures the time it takes to run the specified `promise`. **/
 private function measurePromise(?done: Callback<Null<JsError>>, prompt: String, promise: Promise<Any>) {
