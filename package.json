@@ -14,7 +14,7 @@
 		"url": "https://belin.io"
 	},
 	"bin": {
-		"belin_card": "./bin/belin_card.js"
+		"belin_card": "bin/belin_card.js"
 	},
 	"devDependencies": {
 		"esbuild": "^0.23.1",
