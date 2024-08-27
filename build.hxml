@@ -1,5 +1,5 @@
 --define js-es=6
---define js-global=global
+--define js-global=globalThis
 --js bin/belin_card.js
 --library hxnodejs
 --macro belin_card.Macro.shebang("node")
