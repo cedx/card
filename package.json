@@ -29,7 +29,6 @@
 		"cli"
 	],
 	"scripts": {
-		"prepack": "lix Dist",
 		"start": "node bin/belin_card.js"
 	}
 }
