@@ -18,7 +18,6 @@ function main() {
 private function formatDuration(duration: Float) {
 	final operand = Math.pow(10, 3);
 	final timestamp = Math.round(duration * operand) / operand;
-
 	final seconds = Std.int(timestamp);
 	final milliseconds = Std.int((timestamp - seconds).seconds());
 	return seconds > 1 ? '${seconds}s ${milliseconds}ms' : '${milliseconds}ms';
