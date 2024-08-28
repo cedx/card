@@ -2,6 +2,7 @@
 import haxe.Timer;
 import js.glob_watcher.GlobWatcher;
 import js.lib.Error as JsError;
+using DateTools;
 using tink.CoreApi;
 
 /** Watches for file changes. **/
@@ -11,6 +12,16 @@ function main() {
 		measureCommand(done, "haxe --debug build.hxml");
 		Sys.command("node --enable-source-maps bin/belin_card.js");
 	});
+}
+
+/** Formats the specified `duration` in seconds. **/
+private function formatDuration(duration: Float) {
+	final operand = Math.pow(10, 3);
+	final timestamp = Math.round(duration * operand) / operand;
+
+	final seconds = Std.int(timestamp);
+	final milliseconds = Std.int((timestamp - seconds).seconds());
+	return seconds > 1 ? '${seconds}s ${milliseconds}ms' : '${milliseconds}ms';
 }
 
 /** Measures the time it takes to run the specified `command`. **/
@@ -26,6 +37,6 @@ private function measurePromise(?done: Callback<Null<JsError>>, prompt: String, 
 	final timestamp = Timer.stamp();
 	promise.handle(outcome -> switch outcome {
 		case Failure(error): done != null ? done.invoke(error.toJsError()) : throw error;
-		case Success(_): Sys.println('> ${Tools.formatDuration(Timer.stamp() - timestamp)}'); done?.invoke(null);
+		case Success(_): Sys.println('> ${formatDuration(Timer.stamp() - timestamp)}'); done?.invoke(null);
 	});
 }
