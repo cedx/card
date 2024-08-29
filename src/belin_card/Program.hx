@@ -56,9 +56,7 @@ final class Program {
 				.line()
 			.footer();
 
-		Console.formatMode = AsciiTerminal;
-		Console.logPrefix = "";
-		Console.log('$newLine$builder');
+		Console.printlnFormatted('$newLine$builder');
 		return Noise;
 	}
 }
