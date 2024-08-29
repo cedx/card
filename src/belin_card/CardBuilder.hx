@@ -19,38 +19,38 @@ abstract CardBuilder(StringBuf) from StringBuf {
 	public inline function new() this = new StringBuf();
 
 	/** Appends a centered line of text. **/
-	public function center(text: String)
+	public function center(text: String): CardBuilder
 		return line('${repeat(" ", Math.floor((width - getLength(text)) / 2))}$text');
 
 	/** Appends a bottom border. **/
-	public function footer()
+	public function footer(): CardBuilder
 		return addLine('<green>╰${repeat("─")}╯</>');
 
 	/** Appends a top border. **/
-	public function header()
+	public function header(): CardBuilder
 		return addLine('<green>╭${repeat("─")}╮</>');
 
 	/** Adds a labeled value. **/
-	public function label(label: String, value: String)
+	public function label(label: String, value: String): CardBuilder
 		return line('<light_white>$label:</> '.lpad(" ", 10 + indent.length + "<light_white></>".length) + value);
 
 	/** Appends a line of text. **/
-	public function line(text = "")
+	public function line(text = ""): CardBuilder
 		return addLine('<green>│</>$text${repeat(" ", width - getLength(text))}<green>│</>');
 
 	/** Appends a line of plain text. **/
-	function addLine(text: String) {
+	function addLine(text: String): CardBuilder {
 		this.add('$indent$text${Program.newLine}');
 		return abstract;
 	}
 
 	/** Gets the length in characters of the specified text, excluding formatting tags. **/
-	function getLength(text: String) {
+	function getLength(text: String): Int {
 		final innerText = ~/<[^<]*>/g.replace(text, "");
 		return #if neko Utf8.length(innerText) #else innerText.length #end;
 	}
 
 	/** Repeats the specified `character` a given number of `times`. **/
-	function repeat(character: String, times = width)
+	function repeat(character: String, times = width): String
 		return [for (_ in 0...times) character].join("");
 }
