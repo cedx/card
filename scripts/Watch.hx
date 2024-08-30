@@ -27,7 +27,7 @@ private function formatDuration(duration: Float) {
 private function measureCommand(?done: Callback<Null<JsError>>, command: String)
 	measurePromise(done, command, Promise.irreversible((resolve, reject) -> {
 		final exitCode = Sys.command(command);
-		exitCode == 0 ? resolve(Noise) : reject(new Error(exitCode, 'The command "$command" failed.'));
+		exitCode == 0 ? resolve(Noise) : reject(Error.withData('The command "$command" failed.', exitCode));
 	}));
 
 /** Measures the time it takes to run the specified `promise`. **/
