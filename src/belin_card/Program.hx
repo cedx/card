@@ -1,7 +1,7 @@
 package belin_card;
 
 #if nodejs
-import js.Node.process;
+import js.Node;
 #end
 import tink.Cli;
 using StringTools;
@@ -28,7 +28,7 @@ final class Program {
 
 	/** Application entry point. **/
 	public static function main() {
-		#if nodejs process.title = "Cédric Belin's Card"; #end
+		#if nodejs Node.process.title = "Cédric Belin's Card"; #end
 		Cli.process(Sys.args(), new Program()).handle(Cli.exit);
 	}
 
