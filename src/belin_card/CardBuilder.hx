@@ -9,6 +9,9 @@ using StringTools;
 @:forward(toString)
 abstract CardBuilder(StringBuf) from StringBuf {
 
+	/** The string corresponding to a line break. **/
+	public static final newLine = Sys.systemName() == "Windows" ? "\r\n" : "\n";
+
 	/** The string used to indent each line. **/
 	static inline final indent = "   ";
 
@@ -40,7 +43,7 @@ abstract CardBuilder(StringBuf) from StringBuf {
 
 	/** Appends a line of plain text. **/
 	function addLine(text: String): CardBuilder {
-		this.add('$indent$text${Program.newLine}');
+		this.add('$indent$text$newLine');
 		return abstract;
 	}
 

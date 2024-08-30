@@ -14,9 +14,6 @@ using tink.CoreApi;
 **/
 final class Program {
 
-	/** The string corresponding to a line break. **/
-	public static final newLine = Sys.systemName() == "Windows" ? "\r\n" : "\n";
-
 	/** Diplay this help. **/
 	public var help = false;
 
@@ -56,7 +53,7 @@ final class Program {
 				.line()
 			.footer();
 
-		Console.printlnFormatted('$newLine$builder');
+		Console.printlnFormatted('${CardBuilder.newLine}$builder');
 		return Noise;
 	}
 }
