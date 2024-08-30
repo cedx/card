@@ -1,8 +1,6 @@
 package belin_card;
 
-#if nodejs
-import js.Node;
-#end
+#if nodejs import js.Node; #end
 import tink.Cli;
 using StringTools;
 using tink.CoreApi;

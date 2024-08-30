@@ -1,8 +1,6 @@
 package belin_card;
 
-#if neko
-import neko.Utf8;
-#end
+#if neko import neko.Utf8; #end
 using StringTools;
 
 /** Builds a business card by appending string chunks. **/
