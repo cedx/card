@@ -47,7 +47,7 @@ abstract CardBuilder(StringBuf) from StringBuf {
 
 	/** Gets the length in characters of the specified text, excluding formatting tags. **/
 	function getLength(text: String): Int {
-		final innerText = ~/<[^<]*>/g.replace(text, "");
+		final innerText = ~/<[^>]+>/g.replace(text, "");
 		return #if neko Utf8.length(innerText) #else innerText.length #end;
 	}
 
