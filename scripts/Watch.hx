@@ -35,7 +35,11 @@ private function measurePromise(?done: Callback<Null<JsError>>, prompt: String, 
 	Sys.print('$prompt ');
 	final timestamp = Timer.stamp();
 	promise.handle(outcome -> switch outcome {
-		case Failure(error): done != null ? done.invoke(error.toJsError()) : throw error;
-		case Success(_): Sys.println('> ${formatDuration(Timer.stamp() - timestamp)}'); done?.invoke(null);
+		case Failure(error):
+			Sys.println(error);
+			done != null ? done.invoke(error.toJsError()) : throw error;
+		case Success(_):
+			Sys.println('> ${formatDuration(Timer.stamp() - timestamp)}');
+			done?.invoke(null);
 	});
 }
