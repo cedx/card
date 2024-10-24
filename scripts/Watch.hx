@@ -23,21 +23,21 @@ private function formatDuration(duration: Float) {
 	return seconds > 1 ? '${seconds}s ${milliseconds}ms' : '${milliseconds}ms';
 }
 
-/** Measures the time it takes to run the specified `command`. **/
+/** Measures the time it takes to run the specified `command` line. **/
 private function measureCommand(?done: Callback<Null<JsError>>, command: String)
-	measurePromise(done, command, Promise.irreversible((resolve, reject) -> {
+	measurePromise(done, command, () -> Promise.irreversible((resolve, reject) -> {
 		final exitCode = Sys.command(command);
 		exitCode == 0 ? resolve(Noise) : reject(Error.withData('The command "$command" failed.', exitCode));
 	}));
 
-/** Measures the time it takes to run the specified `promise`. **/
-private function measurePromise(?done: Callback<Null<JsError>>, prompt: String, promise: Promise<Any>) {
+/** Measures the time it takes to run the specified `promise` generator. **/
+private function measurePromise(?done: Callback<Null<JsError>>, prompt: String, promise: () -> Promise<Any>) {
 	Sys.print('$prompt ');
 	final timestamp = Timer.stamp();
-	promise.handle(outcome -> switch outcome {
+	promise().handle(outcome -> switch outcome {
 		case Failure(error):
 			Sys.println(error);
-			done != null ? done.invoke(error.toJsError()) : throw error;
+			done?.invoke(error.toJsError());
 		case Success(_):
 			Sys.println('> ${formatDuration(Timer.stamp() - timestamp)}');
 			done?.invoke(null);
