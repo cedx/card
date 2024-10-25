@@ -4,4 +4,4 @@
 --define no-deprecation-warnings
 --library console.hx
 --library tink_cli
---main belin_card.Program
+--main belin.card.Program

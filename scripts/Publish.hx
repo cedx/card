@@ -1,5 +1,5 @@
 //! --class-path src
-import belin_card.Platform;
+import belin.card.Platform;
 
 /** Publishes the package. **/
 function main() {

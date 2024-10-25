@@ -1,4 +1,4 @@
-package belin_card;
+package belin.card;
 
 #if nodejs import js.Node; #end
 import tink.Cli;

@@ -2,5 +2,5 @@
 --define js-global=globalThis
 --js bin/belin_card.js
 --library hxnodejs
---macro belin_card.Macro.shebang("node")
+--macro belin.card.Macro.shebang("node")
 share/build.hxml

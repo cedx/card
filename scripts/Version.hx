@@ -1,5 +1,5 @@
 //! --class-path src
-import belin_card.Platform;
+import belin.card.Platform;
 import sys.io.File;
 
 /** Updates the version number in the sources. **/

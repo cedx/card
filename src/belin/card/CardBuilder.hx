@@ -1,4 +1,4 @@
-package belin_card;
+package belin.card;
 
 #if neko import neko.Utf8; #end
 using StringTools;

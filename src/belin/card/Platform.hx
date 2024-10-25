@@ -1,4 +1,4 @@
-package belin_card;
+package belin.card;
 
 #if macro
 import haxe.Json;
