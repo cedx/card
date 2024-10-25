@@ -1,7 +1,7 @@
 {
 	"classPath": "src/",
 	"contributors": ["cedx"],
-	"dependencies": {"Console.hx": "", "hxnodejs": "", "tink_cli": ""},
+	"dependencies": {"Console.hx": "", "tink_cli": ""},
 	"description": "Business card of Cédric Belin, full stack developer.",
 	"license": "MIT",
 	"name": "belin_card",
