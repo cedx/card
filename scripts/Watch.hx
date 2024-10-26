@@ -8,12 +8,7 @@ using tink.CoreApi;
 /** Watches for file changes. **/
 function main() {
 	measureCommand("lix Build --debug");
-	Sys.command("node --enable-source-maps bin/belin_card.js");
-
-	GlobWatcher.watch("src/belin/card/**/*.hx", done -> {
-		measureCommand(done, "haxe --debug build.hxml");
-		Sys.command("node --enable-source-maps bin/belin_card.js");
-	});
+	GlobWatcher.watch("src/belin/card/**/*.hx", done -> measureCommand(done, "haxe --debug build.hxml"));
 }
 
 /** Formats the specified `duration` in seconds. **/
