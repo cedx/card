@@ -3,8 +3,11 @@
 {extname, join} = require "node:path"
 pkg = require "./package.json"
 
+option "-m", "--map", "Whether to generate source maps."
+
 task "build", "Builds the project.", (options) ->
-	run "coffee", "--compile", "--no-header", "--output", "lib", "src"
+	sourcemaps = if options.map then ["--map"] else []
+	run "coffee", sourcemaps.concat(["--compile", "--no-header", "--output", "lib", "src"])...
 
 task "clean", "Deletes all generated files.", ->
 	await rm join("lib", file), {recursive: true} for file in await readdir "lib" when not file.endsWith ".d.ts"
