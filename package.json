@@ -1,13 +1,12 @@
 {
 	"bugs": "https://github.com/cedx/card/issues",
 	"description": "Business card of Cédric Belin, full stack developer.",
-	"files": [],
 	"homepage": "https://github.com/cedx/card",
 	"license": "MIT",
 	"name": "@cedx/card",
 	"repository": "cedx/card",
-	"type": "commonjs",
-	"version": "6.0.0",
+	"type": "module",
+	"version": "7.0.0",
 	"author": {
 		"email": "cedric@belin.io",
 		"name": "Cédric Belin",
@@ -16,13 +15,24 @@
 	"bin": {
 		"belin_card": "bin/belin_card.js"
 	},
+	"dependencies": {
+		"boxen": "^8.0.1"
+	},
 	"devDependencies": {
-		"glob-watcher": "^6.0.0",
-		"terser": "^5.36.0"
+		"@coffeelint/cli": "^5.2.11",
+		"coffeescript": "^2.7.0"
 	},
 	"engines": {
 		"node": ">=22.0.0"
 	},
+	"exports": {
+		"types": "./lib/index.d.ts",
+		"default": "./lib/index.js"
+	},
+	"files": [
+		"lib/",
+		"src/"
+	],
 	"keywords": [
 		"card",
 		"cedx",

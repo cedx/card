@@ -10,7 +10,7 @@ You can verify if you're already good to go with the following command:
 
 ```shell
 node --version
-# v23.0.0
+# v23.1.0
 ```
 
 Then, to display the business card, just type the following command in your terminal:
