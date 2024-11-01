@@ -28,7 +28,7 @@ try
 	{values} = parseArgs config
 	console.log switch
 		when values.help then usage
-		when values.version then (JSON.parse readFileSync join(import.meta.dirname, "../package.json"), "utf8").version
+		when values.version then (JSON.parse (readFileSync join(import.meta.dirname, "../package.json"), "utf8")).version
 		else getCard 1
 
 catch error

@@ -18,7 +18,7 @@ export getCard = (margin = 0) ->
 		"#{styleText "white", styleText("bold", "    Card:")} #{styleText "yellow", "npx"} #{styleText "white", "@cedx/card"}"
 		"#{styleText "white", styleText("bold", "   Email:")} #{styleText "white", "cedric@belin.io"}"
 		"#{styleText "white", styleText("bold", " Website:")} #{styleText "white", "https://belin.io"}"
-	];
+	]
 
 	options =
 		borderColor: "green"
