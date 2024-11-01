@@ -13,6 +13,7 @@
 *.ps1 text
 *.sql text
 *.svg text
+*.ts text
 *.txt text
 *.yaml text
 *.yml text
