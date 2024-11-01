@@ -7,7 +7,7 @@ option "-m", "--map", "Whether to generate source maps."
 
 task "build", "Builds the project.", (options) ->
 	sourcemaps = if options.map then ["--map"] else []
-	run "coffee", sourcemaps.concat(["--compile", "--no-header", "--output", "lib", "src"])...
+	run "coffee", "--compile", sourcemaps..., "--no-header", "--output", "lib", "src"
 
 task "clean", "Deletes all generated files.", ->
 	await rm join("lib", file), {recursive: true} for file in await readdir "lib" when not file.endsWith ".d.ts"
