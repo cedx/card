@@ -18,12 +18,10 @@ Options:
 # Start the application.
 try
 	process.title = "Cédric Belin's Card"
-	config =
-		options:
-			help: {short: "h", type: "boolean", default: false}
-			version: {short: "v", type: "boolean", default: false}
+	{values} = parseArgs options:
+		help: {short: "h", type: "boolean", default: false}
+		version: {short: "v", type: "boolean", default: false}
 
-	{values} = parseArgs config
 	console.log switch
 		when values.help then usage
 		when values.version
