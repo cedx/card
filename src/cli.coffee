@@ -26,7 +26,9 @@ try
 	{values} = parseArgs config
 	console.log switch
 		when values.help then usage
-		when values.version then (await import("../package.json", with: {type: "json"})).default.version
+		when values.version
+			pkg = await import("../package.json", with: {type: "json"})
+			pkg.default.version
 		else getCard 1
 
 catch error
