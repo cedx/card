@@ -25,8 +25,9 @@ task "publish", "Publishes the package.", ->
 	run "npm", "publish", "--registry=#{registry}" for registry in ["https://registry.npmjs.org", "https://npm.pkg.github.com"]
 	run "git", action..., "v#{pkg.version}" for action in [["tag"], ["push", "origin"]]
 
-task "watch", "Watches for file changes.", ->
-	run "coffee", "--compile", "--map", "--no-header", "--output", "lib", "--watch", "src"
+task "watch", "Watches for file changes.", (options) ->
+	sourcemaps = if options.map then ["--map"] else []
+	run "coffee", "--compile", sourcemaps..., "--no-header", "--output", "lib", "--watch", "src"
 
 ###*
 # Executes a command from a local package.
