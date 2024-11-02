@@ -1,6 +1,4 @@
 import console from "node:console"
-import {readFileSync} from "node:fs"
-import {join} from "node:path"
 import process from "node:process"
 import {parseArgs} from "node:util"
 import {getCard} from "./card.js"
@@ -28,7 +26,7 @@ try
 	{values} = parseArgs config
 	console.log switch
 		when values.help then usage
-		when values.version then (await import("../package.json", with: {type: "json"})).version
+		when values.version then (await import("../package.json", with: {type: "json"})).default.version
 		else getCard 1
 
 catch error
