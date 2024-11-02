@@ -1,6 +1,6 @@
 {spawnSync} = require "node:child_process"
 {readdirSync, rmSync} = require "node:fs"
-{extname, join} = require "node:path"
+{join} = require "node:path"
 pkg = require "./package.json"
 
 option "-m", "--map", "Whether to generate source maps."
