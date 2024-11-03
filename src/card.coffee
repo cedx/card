@@ -20,10 +20,8 @@ export getCard = (margin = 0) ->
 		"#{styleText "white", styleText("bold", " Website:")} #{styleText "white", "https://belin.io"}"
 	]
 
-	options =
+	boxen buffer.join("\n"),
 		borderColor: "green"
 		borderStyle: "round"
 		margin: margin
 		padding: 1
-
-	boxen buffer.join("\n"), options
