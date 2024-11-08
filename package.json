@@ -13,7 +13,7 @@
 		"url": "https://belin.io"
 	},
 	"bin": {
-		"belin_card": "bin/belin_card.js"
+		"card": "bin/card.js"
 	},
 	"dependencies": {
 		"boxen": "^8.0.1"
@@ -40,6 +40,6 @@
 		"cli"
 	],
 	"scripts": {
-		"start": "node bin/belin_card.js"
+		"start": "node bin/card.js"
 	}
 }
