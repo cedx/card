@@ -8,7 +8,7 @@ usage = """
 Print the business card of Cédric Belin, full stack developer.
 
 Usage:
-	npx @cedx/card
+	npx @cedx/card [options]
 
 Options:
 	-h, --help     Display this help.
