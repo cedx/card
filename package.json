@@ -13,7 +13,7 @@
 		"url": "https://belin.io"
 	},
 	"bin": {
-		"card": "bin/card.js"
+		"card": "bin/Card.js"
 	},
 	"dependencies": {
 		"boxen": "^8.0.1"
