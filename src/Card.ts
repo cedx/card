@@ -16,8 +16,8 @@ export function getCard(margin = 0): string {
 		`${styleText("white", styleText("bold", "Mastodon:"))} ${styleText("gray", "https://mastodon.social/")}${styleText("cyan", "@cedx")}`,
 		"",
 		`${styleText("white", styleText("bold", "    Card:"))} ${styleText("yellow", "npx")} ${styleText("white", "@cedx/card")}`,
-		`${styleText("white", styleText("bold", "   Email:"))} ${styleText("white", "cedric@belin.io")}`,
-		`${styleText("white", styleText("bold", " Website:"))} ${styleText("white", "https://belin.io")}`
+		`${styleText("white", styleText("bold", "   Email:"))} ${styleText("white", "contact@cedric-belin.fr")}`,
+		`${styleText("white", styleText("bold", " Website:"))} ${styleText("white", "https://cedric-belin.fr")}`
 	];
 
 	return boxen(buffer.join("\n"), {
