@@ -1,3 +1,3 @@
-Write-Output "Performing the static analysis of source code..."
+"Performing the static analysis of source code..."
 npx tsc --build tsconfig.json --noEmit
 npx eslint --cache --cache-location=var --config=etc/ESLint.js bin src
