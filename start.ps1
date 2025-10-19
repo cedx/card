@@ -2,7 +2,4 @@
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 $PSNativeCommandUseErrorActionPreference = $true
-
-$commandPath = Get-Item $PSCommandPath
-$scriptRoot = $commandPath.LinkType ? (Split-Path $commandPath.LinkTarget) : $PSScriptRoot
-node $scriptRoot/bin/Belin.Card.js @args
+node $PSScriptRoot/bin/Belin.Card.js @args
