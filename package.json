@@ -9,7 +9,7 @@
 	"type": "module",
 	"version": "8.1.0",
 	"bin": {
-		"card": "bin/Belin.Card.js"
+		"Card": "bin/Belin.Card.js"
 	},
 	"dependencies": {
 		"boxen": "^8.0.1"
