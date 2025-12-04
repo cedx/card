@@ -1,7 +1,7 @@
 # Cédric Belin's Card
 Business card of Cédric Belin, yet another full stack developer,
 addicted to [.NET](https://dotnet.microsoft.com)/[C#](https://learn.microsoft.com/en-us/dotnet/csharp)/[PowerShell](https://learn.microsoft.com/en-us/powershell),
-but also to [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript)/[Node.js](https://nodejs.org),
+but also to [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript)/[TypeScript](https://www.typescriptlang.org),
 [Haxe](https://haxe.org) and [PHP](https://www.php.net).
 
 ## Usage
@@ -10,7 +10,6 @@ You can verify if you're already good to go with the following command:
 
 ```shell
 node --version
-# v25.2.0
 ```
 
 Then, to display the business card, just type the following command in your terminal:
